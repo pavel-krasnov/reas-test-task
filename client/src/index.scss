@@ -1,0 +1,28 @@
+body {
+    background: rgb(236,241,248);
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 40%;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 3% 0 0 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.nextBtn {
+    display: block;
+    background: rgb(47,144,252);
+    background: linear-gradient(90deg, rgba(49,146,253,1) 0%, rgba(24,117,240,1) 100%);
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 30px 0 20px 0;
+    border-radius: 50px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-weight: bold;
+}

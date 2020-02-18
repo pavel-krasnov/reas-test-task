@@ -1,0 +1,63 @@
+.Location {
+    .gridContainer {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    
+    .gridItem {
+        margin: 5px;
+    }
+    
+    .radioContainer {
+        position: relative;
+    }
+
+    .radioLabel {
+        padding-left: 25px;
+        cursor: pointer;
+        color: rgb(148,154,164);
+    }
+    
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+    
+    .checkMark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        border: 1px solid rgb(193,203,216);
+        border-radius: 50%;
+    }
+
+    input:checked + .radioLabel {
+        color: black;
+    }
+    
+    input:checked ~ .radioLabel .checkMark {
+        background-color: #2196F3;
+    }
+    
+    .checkMark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    input:checked ~ .radioLabel .checkMark:after {
+        display: block;
+    }
+    
+    .checkMark:after {
+        top: 3px;
+        left: 3px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background: white;
+    }
+}

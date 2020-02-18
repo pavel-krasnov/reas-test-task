@@ -1,0 +1,56 @@
+.Property {
+    .radioContainer {
+        display: inline-block;
+        position: relative;
+        margin: 10px 10px 0 0;
+    }
+
+    .radioLabel {
+        display: inline-block;
+        background: rgb(234,238,247);
+        border: none;
+        color: black;
+        padding: 10px 20px 10px 30px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+      }
+    
+    .checkMark {
+        display: none;
+        position: absolute;
+        top: 11px;
+        left: 10px;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+    }
+
+    input:checked + .radioLabel  {
+        background: rgb(65,181,33);
+    }
+    
+    input:checked ~ .checkMark {
+        display: block;
+        background-color: white;
+    }
+    
+    .checkMark:after {
+        position: absolute;
+        display: none;
+        top: -2px;
+        left: 2px;
+    }
+    
+    input:checked ~ .checkMark:after {
+        display: block;
+        content: "\2713";
+        font-weight: 900;
+        font-size: small;
+    }
+}
